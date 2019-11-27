@@ -1,0 +1,68 @@
+/*
+    This is a website that displays pokemon using API calls.
+    Final Project CPSC 314
+    Professor Schroeder
+    
+    @author    Brooke Hughes-Brauner, Donovan Farar, Jared (?)
+    @date      11/27/19
+*/
+
+html {
+    background-color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.navbar {
+    background-color: red;
+}
+
+.breadcrumbs {
+    background-color: #55f;
+    color: white;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: white;
+}
+
+.individualPokemon {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "sprite   name"
+        "stats    attributes"
+}
+
+.pokedexList {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "list   seenOwn"
+}
+
+.sprite {
+    grid-area: sprite;
+}
+
+.name {
+    grid-area: name;
+}
+
+.stats {
+    grid-area: stats;
+}
+
+.attributes {
+    grid-area: attributes;
+}
+
+.pokemonList {
+    grid-area: list;
+}
+
+.seenOwnDataCry {
+    grid-area: seenOwn;
+}
